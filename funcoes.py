@@ -1,4 +1,4 @@
-def menu():
+def menu_loguin():
     from classes import Conta
     print('1 - Cadastrar conta')
     print('2 - Loguin')
