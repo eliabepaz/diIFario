@@ -14,5 +14,5 @@ class Menu:
             email = input("diga seu email")
             senha = input("digite uma senha")
             escola = input("diga sua escola")
-            criar_conta = Sistema(nome,data_nasc,email,senha,escola)
-            criar_conta.criar_conta(nome,data_nasc,email,senha,escola)
+            criar_conta = Sistema(nome,email,senha,escola)
+            criar_conta.criar_conta(nome,email,senha,escola)
