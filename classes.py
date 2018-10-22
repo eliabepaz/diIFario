@@ -1,19 +1,37 @@
 class Conta():
-    def __init__(self, nome, data_nsc, email, senha):
+    def __init__(self, nome, email, senha, escola):
         self.nome = nome
-        self.data_nsc = data_nsc
         self.email = email
         self.senha = senha
-
-#lembra de passar a conta como argumento
-class Perfil(Conta):
-    def __init__(self, nome, data_nsc, escola):
-        super().__init__(nome, data_nsc, email=None, senha=None)
         self.escola = escola
 
+    def get_nome(self):
+        return self.nome
+
+
+    def get_email(self):
+        return self.email
+
+    def get_senha(self):
+        return self.senha
+
+    def get_escola(self):
+        return self.escola
+
+    def set_escola(self,novo_escola):
+        self.escola = novo_escola
+
+    def set_nome(self, novo_nome):
+        self.nome = novo_nome
+
+    def set_senha(self,nova_senha):
+        self.senha = nova_senha
+
+        
 class Atividade():
-    def __init__(self, info, disciplina, data_entrega, arquivo):
+    def __init__(self, info, disciplina, data_entrega, arquivo, tag):
         self.info = info
         self.disciplina = disciplina
         self.data_entrega = data_entrega
         self.arquivo = arquivo
+        self.tag = tag
