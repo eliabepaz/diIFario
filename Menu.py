@@ -1,5 +1,5 @@
 from Sistema import Sistema
-from Conta import Conta
+from Classe import Conta
 class Menu:
     def __init__(self):
         pass
